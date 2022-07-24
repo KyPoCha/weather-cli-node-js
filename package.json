@@ -1,0 +1,26 @@
+{
+  "name": "weather-cli-kyr-pol",
+  "version": "1.0.0",
+  "private": false,
+  "description": "CLI for getting weather",
+  "main": "index.js",
+  "bin": "./index.js",
+  "engines": {
+    "node": ">14"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["weather","cli"],
+  "author": "Kyrylo Polishchuk",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": "",
+    "email": "kirillpolishchuk02@gmail.com"
+  }
+}
