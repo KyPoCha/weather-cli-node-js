@@ -12,7 +12,10 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["weather","cli"],
+  "keywords": [
+    "weather",
+    "cli"
+  ],
   "author": "Kyrylo Polishchuk",
   "license": "ISC",
   "repository": {
@@ -22,5 +25,8 @@
   "bugs": {
     "url": "",
     "email": "kirillpolishchuk02@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }
