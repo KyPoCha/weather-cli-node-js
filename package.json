@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "private": false,
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
   "engines": {
     "node": ">14"
   },
@@ -20,7 +22,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/KyPoCha/weather-cli-node-js"
   },
   "bugs": {
     "url": "",
