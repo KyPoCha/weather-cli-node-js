@@ -7,7 +7,7 @@ const printError = (error)=>{
 
 
 const printSuccess = (message)=>{
-    console.log(chalk.bgGreen("Error") + " " + message);
+    console.log(chalk.bgGreen("Success") + " " + message);
 };
 
 const printHelp = ()=>{
@@ -20,4 +20,19 @@ const printHelp = ()=>{
     );
 };
 
-export {printError, printSuccess, printHelp};
+const printWeather = (res,icon)=>{
+    console.log(
+        dedent(`${chalk.bgYellow(" WEATHER ")} Weather in the city ${res.name}
+        ${icon} ${res.weather[0].description}
+        Temperature: ${res.main.temp} ℃ (feels like ${res.main.feels_like} ℃),
+            minimum: ${res.main.temp_min} ℃, maximum: ${res.main.temp_max} ℃
+        Pressure in the air: ${res.main.pressure}
+        Humidity: ${res.main.humidity}%
+        Visibility: ${res.visibility / 100}%
+        Speed of wind: ${res.wind.speed} m/s
+        
+        `)
+    );
+};
+
+export {printError, printSuccess, printHelp,printWeather};
