@@ -1,4 +1,4 @@
-#!/usr/bin/env node //for cli
+#!/usr/bin/env node
 
 import {getArgs} from "./helpers/args.js"
 import {printHelp, printSuccess, printError, printWeather} from "./services/log_services.js";
